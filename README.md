@@ -24,6 +24,6 @@ The map_double function will map the potentiometer input to a frequency, current
 
 ## Credits:
 
-Original sketch: http://nr8o.dhlpilotcentral.com/?p=83
-map_double function: http://www.dustynrobots.com/news/high-resolution-arduino-map-function/
-Additional info: http://www.ad7c.com/projects/ad9850-dds-vfo/
+* Original sketch: http://nr8o.dhlpilotcentral.com/?p=83
+* map_double function: http://www.dustynrobots.com/news/high-resolution-arduino-map-function/
+* Additional info: http://www.ad7c.com/projects/ad9850-dds-vfo/
