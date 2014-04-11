@@ -14,6 +14,10 @@
 #define DATA 10       // Pin 10 - connect to serial data load pin (DATA) On the blue Ebay board, this is labeled D7
 #define RESET 11      // Pin 11 - connect to reset pin (RST).te
 
+#define POT 5         // Connect the center tap of a potentiometer to analog 5
+#define POT_HI 2      // I'm out of 5v supplies, so a digital pin will do. pot supply
+                      // GND the low pin of the pot
+
 #define pulseHigh(pin) {digitalWrite(pin, HIGH); digitalWrite(pin, LOW); }
 
 // transfers a byte, a bit at a time, LSB first to the 9850 via serial DATA line
@@ -41,9 +45,9 @@ void setup() {
   pinMode(W_CLK, OUTPUT);
   pinMode(DATA, OUTPUT);
   pinMode(RESET, OUTPUT);
-  pinMode(2, OUTPUT);
-  pinMode(5, INPUT);
-  digitalWrite(2, HIGH);
+  pinMode(POT_HI, OUTPUT);
+  pinMode(POT, INPUT);
+  digitalWrite(POT_HI, HIGH);
   Serial.begin(9600);
 
   pulseHigh(RESET);
